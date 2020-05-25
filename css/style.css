@@ -1,0 +1,169 @@
+html {
+	min-height: 100%;
+	background: linear-gradient(to bottom, #E6E617, #9A9A3D, #7B7B04, #F6F662, #F6F69C);
+	font-family: Arial;
+	font-size: 18px;
+	margin: 0;
+}
+
+body {
+	color: white;
+	line-height: 1.25;
+}
+
+nav {
+	width: 60%;
+	margin: 0 auto;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav {
+	width: 100%;
+	padding-top: 3px;
+	padding: 15px 0;
+	text-align: center;
+	background-color: RGB(67, 71, 72);
+}
+
+nav ul {
+	font-family: Tahoma;
+	list-style: none;
+	padding: 3px;
+	margin: 0;
+
+}
+
+nav ul li {
+    margin-left: -.36em;
+	padding: 15px 25px;
+	color: white;
+	display: inline;
+	background-color: RGB(67, 71, 72);
+	border: 1px solid RGB(78, 82, 83);
+}
+
+nav ul a:active li.home {
+	background: linear-gradient(to bottom, dimgrey, RGB(56, 60, 63));
+	border-bottom: 3px inset yellow;
+}
+
+nav ul a:active li.news {
+	background: linear-gradient(to top, dimgrey, RGB(56, 60, 63));
+	border-top: 3px inset #3c3;
+}
+
+nav ul a:active li.schedule {
+	background: linear-gradient(to bottom, dimgrey, RGB(56, 60, 63));
+	border-bottom: 3px inset #09f;
+}
+
+nav ul a:active li.gallery {
+	background: linear-gradient(to top, dimgrey, RGB(56, 60, 63));
+	border-top: 3px inset #c00;
+}
+
+section {
+	width: 60%;
+	margin: 0 auto;
+}
+
+p {
+	text-indent: 20px;
+	text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+figure figcaption {
+	text-align: center;
+	font-size: 16px;
+}
+
+footer {
+	height: 100%;
+	margin: 0;
+	margin-top: 25px;
+	padding: 25px;
+	background-color: RGB(0,0,0,0.8);
+}
+
+footer p {
+	text-align: center;
+	margin: 0;
+}
+
+.main-title {
+	margin-top: 0;
+}
+
+.main-photo {
+	width: 130px;
+	height: 150px;
+}
+
+.news article {
+	border: 2px solid black;
+	border-collapse: collapse;
+	margin: -2px 0px;
+	padding: 25px;
+}
+
+.main figure {
+	border: 3px solid black;
+	float: left;
+}
+
+.gallery img {
+	width: 40%;
+}
+
+table {
+	border: 3px solid black;
+	border-collapse: collapse;
+	empty-cells: hide;
+}
+
+tr, td, th {
+	padding: 8px;
+	text-align: center;
+}
+
+th,
+tr,
+td {
+	border: 3px solid black;
+}
