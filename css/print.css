@@ -1,0 +1,16 @@
+@media print {
+	html {
+		font-style: Georgia;
+		background: none;
+		color: black;
+	}
+
+	section {
+		margin: 0 50px;
+		width: 100%;
+	}
+
+	nav, footer {
+		display: none;
+	}
+}

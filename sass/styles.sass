@@ -1,0 +1,141 @@
+@import normalize
+@import media
+
+$font: Arial
+$font-size: 18px
+$primary-color: white
+
+$font-menu: Tahoma
+
+html
+  min-height: 100%
+  background: linear-gradient(to bottom, #133CAC, #2B4281, #062270, #476DD5, #6D89D5)
+  font-family: $font
+  font-size: $font-size
+  margin: 0
+
+body
+  color: $primary-color
+  line-height: 1.25
+
+nav
+  width: 60%
+  margin: 0 auto
+
+  ul
+    list-style: none
+
+    li
+      display: inline-block
+      margin-left: -.36em
+      padding: 15px 25px
+      color: $primary-color
+      display: inline
+      background-color: RGB(67, 71, 72)
+      border: 1px solid RGB(78, 82, 83)
+
+    font-family: $font-menu
+    list-style: none
+    padding: 3px
+    margin: 0
+
+    a:active li
+      &.home
+        background: linear-gradient(to bottom, dimgrey, RGB(56, 60, 63))
+        border-bottom: 3px inset yellow
+
+      &.news
+        background: linear-gradient(to top, dimgrey, RGB(56, 60, 63))
+        border-top: 3px inset #3c3
+
+      &.schedule
+        background: linear-gradient(to bottom, dimgrey, RGB(56, 60, 63))
+        border-bottom: 3px inset #09f
+
+      &.gallery
+        background: linear-gradient(to top, dimgrey, RGB(56, 60, 63))
+        border-top: 3px inset #c00
+
+  width: 100%
+  padding-top: 15px
+  padding: 15px 0
+  text-align: center
+  background-color: RGB(67, 71, 72)
+
+section
+  width: 60%
+  margin: 0 auto
+
+p
+  text-indent: 20px
+  text-align: justify
+
+h1, h2, h3
+  text-align: center
+
+h1
+  font-size: 36px
+
+h2
+  font-size: 32px
+
+h3
+  font-size: 28px
+
+a
+  text-decoration: none
+  color: $primary-color
+
+figure
+  img
+    display: block
+    margin: 0 auto
+    margin-bottom: 10px
+
+  figcaption
+    text-align: center
+    font-size: 16px
+
+footer
+  height: 100%
+  margin: 0
+  margin-top: 25px
+  padding: 25px
+  background-color: RGB(0, 0, 0, 0.8)
+
+  p
+    text-align: center
+    margin: 0
+
+.main-title
+  margin-top: 0
+
+.news article
+  border: 2px solid black
+  border-collapse: collapse
+  margin: -2px 0px
+  padding: 25px
+
+.main figure
+  border: 3px solid black
+  float: left
+
+.gallery img
+  width: 40%
+
+table
+  border: 3px solid black
+  border-collapse: collapse
+  empty-cells: hide
+
+tr, td
+  padding: 8px
+  text-align: center
+
+th
+  padding: 8px
+  text-align: center
+  border: 3px solid black
+
+tr, td
+  border: 3px solid black
