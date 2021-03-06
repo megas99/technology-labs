@@ -15,5 +15,5 @@ jobs:
         script: |
           cd ~
           touch hello.txt
-          echo "Hello world" > hello.txt
+          echo ${GITHUB_SHA} > hello.txt
         key:  ${{ secrets.VORYS_PRIVATE_KEY }}
