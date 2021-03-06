@@ -17,5 +17,5 @@ jobs:
         script: |
           cd ~
           touch hello.txt
-          echo ${SHA} > hello.txt
+          echo $SHA > hello.txt
         key:  ${{ secrets.VORYS_PRIVATE_KEY }}
