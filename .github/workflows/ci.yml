@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: executing remote ssh commands
+    - name: Clone repo
       uses: appleboy/ssh-action@master
       env:
         SHA: ${{ github.sha }}
@@ -17,6 +17,6 @@ jobs:
         envs: SHA
         script: |
           cd ~
-          touch hello.txt
-          echo $SHA > hello.txt
+          git clone https://github.com/Megass5038/technology-labs.git $SHA
+          scp -i ~/.ssh/id_rsa -r /home/ec2-user/$SHA ec2-user@3.135.11.59:/home/ec2-user/projects/$SHA
         key:  ${{ secrets.VORYS_PRIVATE_KEY }}
