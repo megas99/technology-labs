@@ -14,6 +14,7 @@ jobs:
         host: ${{ secrets.VORYS_HOST }}
         username: ${{ secrets.VORYS_USER }}
         port: 22
+        envs: SHA
         script: |
           cd ~
           touch hello.txt
