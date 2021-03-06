@@ -9,8 +9,11 @@ jobs:
     - name: executing remote ssh commands
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT }}
-        script: cd ${{ secrets.PROJECT_PATH }} && git pull
-        key:  ${{ secrets.PRIVATE_KEY }}
+        host: ${{ secrets.VORYS_HOST }}
+        username: ${{ secrets.VORYS_USER }}
+        port: 22
+        script: |
+          cd ~
+          touch hello.txt
+          echo "Hello world" > hello.txt
+        key:  ${{ secrets.VORYS_PRIVATE_KEY }}
