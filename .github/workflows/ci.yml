@@ -22,5 +22,5 @@ jobs:
         script_stop: true
         key:  ${{ secrets.CBECI_USER_KEY }}
         script: |
-          touch /var/www/html/hello.txt
-          echo "Hello world" > /var/www/html/hello.txt
+          touch /home/cbeci/test_html/hello.txt
+          echo "Hello world" > /home/cbeci/test_html/hello.txt
